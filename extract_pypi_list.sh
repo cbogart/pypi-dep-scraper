@@ -1,0 +1,1 @@
+echo "select full_name, pypiname from sample_sets left join project_stats on sample_sets.project_id=project_stats.project_id left join pypi_projects_v2015 on pypi_projects_v2015.project_id=sample_sets.project_id where sampleset='PyPi4DDB';" | mysql github > pypinames.txt
